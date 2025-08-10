@@ -24,7 +24,7 @@ To run the scraper, execute:
 ```bash
 python app.py
 ```
-This will start the scraping process and output the links to the console.
+This will start the scraping process and output the links to the txt file.
 
 ### Contributing
 We welcome contributions! Please fork the repository and submit a pull request. Make sure to follow the coding standards and include tests for new features.
