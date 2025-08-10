@@ -19,6 +19,13 @@ This project is a Python script designed to scrape Instagram reels links efficie
    ```
 **Prerequisites:** Ensure you have Python 3.8 or higher installed.
 
+## Replace with your data
+into the config.py 
+{
+  "username": "your_username",
+  "password": "your_password"
+}
+
 ### Usage
 To run the scraper, execute:
 ```bash
