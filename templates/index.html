@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Reels Scraper</title>
+</head>
+<body>
+    <h2>Instagram Reels Scraper</h2>
+    <form method="POST">
+        <label>Instagram Username or Profile URL:</label><br>
+        <input type="text" name="username" required><br><br>
+        
+        <label>Start Value (oldest reel no):</label><br>
+        <input type="number" name="start" required><br><br>
+        
+        <label>End Value:</label><br>
+        <input type="number" name="end" required><br><br>
+        
+        <input type="submit" value="Scrape Reels">
+    </form>
+
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+
+    {% if links %}
+        <h3>Scraped Links:</h3>
+        <ul>
+            {% for link in links %}
+                <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
