@@ -22,7 +22,7 @@ This project is a Python script designed to scrape Instagram reels links efficie
 ### Usage
 To run the scraper, execute:
 ```bash
-python scraper.py
+python app.py
 ```
 This will start the scraping process and output the links to the console.
 
